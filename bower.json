@@ -1,0 +1,17 @@
+{
+  "name": "phaser-debug-emitter",
+  "description": "Debug particle emitters",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/samme/phaser-debug-emitter",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "example",
+    "index.html"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "phaser-debug-emitter",
+  "version": "0.0.1",
+  "description": "Offset the camera view from its follow target",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "phaser": "^2.6.2"
+  },
+  "devDependencies": {
+    "coffeebar": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samme/phaser-debug-emitter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samme/phaser-debug-emitter/issues"
+  },
+  "homepage": "https://github.com/samme/phaser-debug-emitter#readme",
+  "scripts": {
+    "start": "coffeebar --watch ."
+  }
+}
