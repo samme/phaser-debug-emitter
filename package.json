@@ -1,7 +1,7 @@
 {
   "name": "phaser-debug-emitter",
   "version": "0.0.1",
-  "description": "Offset the camera view from its follow target",
+  "description": "Debug methods for particle emitters",
   "main": "index.js",
   "directories": {
     "example": "example"
