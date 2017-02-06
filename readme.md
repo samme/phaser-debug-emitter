@@ -1,3 +1,5 @@
+![Screenshot](https://samme.github.io/phaser-debug-emitter/screenshot.png)
+
 # Phaser Debug Emitter ✨
 
 ```javascript
