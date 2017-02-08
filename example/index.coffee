@@ -53,8 +53,11 @@ shutdown = ->
 
 render = ->
   game.debug.emitter      emitter
-  game.debug.emitterInfo  emitter, 20, 20
+  game.debug.emitterInfo  emitter, 20, 40
   game.debug.emitterTotal emitter, 0,  580, game.width, 20
+  debugText "game.debug.emitter(emitter)", emitter.left, -5 + emitter.top
+  debugText "game.debug.emitterInfo(emitter, x, y)", 0, 20
+  debugText "game.debug.emitterTotal(emitter, x, y)", 0, 570
   return
 
 createGui = ->
@@ -81,6 +84,10 @@ createGui = ->
   gui.add(emitter, "x").listen()
   gui.add(emitter, "y").listen()
 
+  return
+
+debugText = (text, x, y, color = '#999', font = game.debug.font) ->
+  game.debug.text text, x, y, color, font
   return
 
 
