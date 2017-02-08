@@ -75,12 +75,12 @@ KEYS_LONG = [
   "_timer"
 ]
 
-emitterColor = (emitter, color) ->
+emitterColor = (emitter) ->
   if emitter.on then COLOR_ON
   else               COLOR_OFF
 
-emitterNext = (emitter) ->
-  emitter._timer - emitter.game.time.time
+# emitterNext = (emitter) ->
+#   emitter._timer - emitter.game.time.time
 
 stringValueForKey = (key, emitter) ->
   val = emitter[key]
