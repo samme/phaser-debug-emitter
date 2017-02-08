@@ -1,6 +1,6 @@
 {
   "name": "phaser-debug-emitter",
-  "description": "Debug particle emitters",
+  "description": "Debug methods for particle emitters",
   "main": "index.js",
   "license": "MIT",
   "homepage": "https://github.com/samme/phaser-debug-emitter",
