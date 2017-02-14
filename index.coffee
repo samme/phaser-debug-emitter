@@ -88,15 +88,15 @@ stringValueForKey = (key, emitter) ->
 
   switch
     when isArray val
-      val = "(#{val.length})"
+      return "(#{val.length})"
     when typ is "number"
-      val = if val % 1 then val.toFixed 1 else val
-    when val?.constructor?.name
-      val.constructor.name
+      return if val % 1 then val.toFixed 1 else val
+    when typ is "object" and val?.constructor?.name
+      return val.constructor.name
     when typeof val is "function"
-      "[Function]"
+      return "[Function]"
     when val?.toString
-      val = val.toString()
+      return val.toString()
 
   val
 

@@ -30,19 +30,19 @@
     typ = typeof val;
     switch (false) {
       case !isArray(val):
-        val = "(" + val.length + ")";
-        break;
+        return "(" + val.length + ")";
       case typ !== "number":
-        val = val % 1 ? val.toFixed(1) : val;
-        break;
-      case !(val != null ? (ref = val.constructor) != null ? ref.name : void 0 : void 0):
-        val.constructor.name;
-        break;
+        if (val % 1) {
+          return val.toFixed(1);
+        } else {
+          return val;
+        }
+      case !(typ === "object" && (val != null ? (ref = val.constructor) != null ? ref.name : void 0 : void 0)):
+        return val.constructor.name;
       case typeof val !== "function":
-        "[Function]";
-        break;
+        return "[Function]";
       case !(val != null ? val.toString : void 0):
-        val = val.toString();
+        return val.toString();
     }
     return val;
   };
