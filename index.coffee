@@ -138,7 +138,7 @@ Phaser.Utils.Debug::emitterTotal = (emitter, x, y, width = 100, height = 10, col
 
   color ?= emitterColor emitter
 
-  _lengthRect.setTo x, y, ~~ width, height
+  _lengthRect.setTo x, y, ~~width, height
   debug.geom _lengthRect, COLOR_LENGTH
 
   _totalRect.setTo  x, y, ~~(width * total / length), height
