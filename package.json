@@ -1,6 +1,6 @@
 {
   "name": "phaser-debug-emitter",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Debug methods for particle emitters",
   "main": "index.js",
   "directories": {
