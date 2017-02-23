@@ -144,6 +144,6 @@ Phaser.Utils.Debug::emitterTotal = (emitter, x, y, width = 100, height = 10, col
   _totalRect.setTo  x, y, ~~(width * total / length), height
   debug.geom _totalRect, color
 
-  debug.text label, x, y + ~~(debug.lineHeight / 2) if label
+  debug.text label, x, y + ~~(debug.lineHeight / 2), null, debug.font if label
 
   return

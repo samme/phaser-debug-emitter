@@ -106,7 +106,7 @@
     _totalRect.setTo(x, y, ~~(width * total / length), height);
     debug.geom(_totalRect, color);
     if (label) {
-      debug.text(label, x, y + ~~(debug.lineHeight / 2));
+      debug.text(label, x, y + ~~(debug.lineHeight / 2), null, debug.font);
     }
   };
 
