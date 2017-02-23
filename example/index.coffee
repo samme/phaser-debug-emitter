@@ -15,16 +15,16 @@ preload = ->
   game.load.baseURL = 'http://examples.phaser.io/assets/'
   game.load.crossOrigin = 'anonymous'
   game.load.image 'bubble', 'particles/bubble.png'
-  game.load.image 'water', 'skies/sunset.png'
+  game.load.image 'bg', 'skies/cavern2.png'
   return
 
 create = ->
   {debug} = game
 
-  debug.font = '16px monospace'
-  debug.lineHeight = 25
+  debug.font = '14px monospace'
+  debug.lineHeight = 20
 
-  game.add.image 0, 0, 'water'
+  game.add.image 0, 0, 'bg'
   #	Emitters have a center point and a width/height, which extends from their center point to the left/right and up/down
   emitter = game.add.emitter game.world.centerX, 200, 100
   emitter.name = 'bubbles'
@@ -56,8 +56,8 @@ render = ->
   game.debug.emitterInfo  emitter, 20, 40
   game.debug.emitterTotal emitter, 0,  580, game.width, 20
   debugText "game.debug.emitter(emitter)", emitter.left, -5 + emitter.top
-  debugText "game.debug.emitterInfo(emitter, x, y)", 0, 20
-  debugText "game.debug.emitterTotal(emitter, x, y)", 0, 570
+  debugText "game.debug.emitterInfo(emitter, x, y)", 10, 20
+  debugText "game.debug.emitterTotal(emitter, x, y)", 10, 560
   return
 
 createGui = ->
@@ -89,7 +89,6 @@ createGui = ->
 debugText = (text, x, y, color = '#999', font = game.debug.font) ->
   game.debug.text text, x, y, color, font
   return
-
 
 game = new (Phaser.Game)(800, 600, Phaser.CANVAS, 'phaser-example',
   preload: preload
