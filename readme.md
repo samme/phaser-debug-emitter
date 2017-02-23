@@ -1,6 +1,6 @@
 ![Screenshot](https://samme.github.io/phaser-debug-emitter/screenshot.png)
 
-[Demo](https://github.com/samme/phaser-debug-emitter)
+[Demo](https://samme.github.io/phaser-debug-emitter/)
 
 Use ✨
 ---
