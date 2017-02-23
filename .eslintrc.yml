@@ -1,9 +1,6 @@
 env:
   browser: yes
 extends: 'eslint:recommended'
-globals:
-  dat: no
-  Phaser: no
 rules:
   comma-spacing:
     - error
@@ -13,7 +10,7 @@ rules:
   no-shadow:
     - error
   no-unused-vars:
-    - warn
+    - error
   semi:
     - error
     - always
